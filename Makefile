@@ -25,6 +25,6 @@ package-install:
 	python -m pip install dist/*.whl
 
 re-install-package:
-	python -m pip install --force-reinstall --user dist/*.whl
+	python -m pip install --force-reinstall dist/*.whl
 
 .PHONY: install test lint selfcheck check build
