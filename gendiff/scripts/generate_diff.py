@@ -30,5 +30,3 @@ def stringify(lst1, lst2):
     return '\n'.join(result)
 
 
-print(stringify(lst1, lst2))
-
