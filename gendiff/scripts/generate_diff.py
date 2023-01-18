@@ -30,3 +30,6 @@ def stringify(lst1, lst2):
     return '\n'.join(result)
 
 
+if __name__ == "__main__":
+    stringify()
+
