@@ -29,6 +29,11 @@ def stringify(file1, file2):
     return '\n'.join(result)
 
 
+<<<<<<< HEAD
+=======
+if __name__ == "__main__":
+    stringify()
+>>>>>>> 5132ecccf4ed50964f9ea8d0df8cf173d6e12a31
 
 def main():
     lst1, lst2 = help()
