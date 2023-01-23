@@ -2,10 +2,7 @@
 from itertools import zip_longest, chain
 import itertools
 import json
-
-
-lst1 = json.load(open('gendiff/scripts/file1.json'))
-lst2 = json.load(open('gendiff/scripts/file2.json'))
+from gendiff import help
 
 
 def key_in_dicts(key, lst1, lst2,  replace=' ', spacer_count=2):
@@ -21,7 +18,9 @@ def key_in_dicts(key, lst1, lst2,  replace=' ', spacer_count=2):
         return f"{offset}+ {key}: {lst2[key]}"
 
 
-def stringify(lst1, lst2):
+def stringify(file1, file2):
+    lst1 = json.load(open(file1))
+    lst2 = json.load(open(file2))
     uniq_keys = sorted(lst1.keys() | lst2.keys())
     lines = []
     for key in uniq_keys:
@@ -30,5 +29,12 @@ def stringify(lst1, lst2):
     return '\n'.join(result)
 
 
-print(stringify(lst1, lst2))
 
+def main():
+    lst1, lst2 = help()
+    stringify(lst1, lst2)
+
+# # print(stringify(lst1, lst2))
+
+if __name__ == "__main__":
+    main()

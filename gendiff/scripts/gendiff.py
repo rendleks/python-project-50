@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import argparse
+from gendiff import scripts
 
 
 def help():
@@ -10,6 +11,11 @@ def help():
     return parser.parse_args()
 
 
+def main():
+    scripts.generate_diff.main()
 
+
+if __name__ == "__main__":
+    main()
 
 
