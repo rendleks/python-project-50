@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import argparse
-from gendiff import scripts
+from gendiff.scripts import generate_diff
 
 
 def help():
@@ -12,7 +12,10 @@ def help():
 
 
 def main():
-    scripts.generate_diff.main()
+    parse = help()
+    print(
+        generate_diff.stringify(parse.first_file, parse.second_file, format=parse.format)
+        )
 
 
 if __name__ == "__main__":

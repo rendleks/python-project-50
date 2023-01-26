@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-from itertools import zip_longest, chain
 import itertools
 import json
-from gendiff import help
+
 
 
 def key_in_dicts(key, lst1, lst2,  replace=' ', spacer_count=2):
@@ -18,7 +17,7 @@ def key_in_dicts(key, lst1, lst2,  replace=' ', spacer_count=2):
         return f"{offset}+ {key}: {lst2[key]}"
 
 
-def stringify(file1, file2):
+def stringify(file1, file2, format="json"):
     lst1 = json.load(open(file1))
     lst2 = json.load(open(file2))
     uniq_keys = sorted(lst1.keys() | lst2.keys())
@@ -28,13 +27,3 @@ def stringify(file1, file2):
     result = itertools.chain("{", lines,"}")
     return '\n'.join(result)
 
-
-
-def main():
-    lst1, lst2 = help()
-    stringify(lst1, lst2)
-
-# # print(stringify(lst1, lst2))
-
-if __name__ == "__main__":
-    main()
