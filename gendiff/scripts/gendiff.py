@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import argparse
-from gendiff.scripts import generate_diff
+from gendiff import generate_diff
 
 
 def help():
@@ -20,5 +20,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
