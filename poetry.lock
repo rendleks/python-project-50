@@ -4,7 +4,7 @@
 name = "asciinema"
 version = "2.2.0"
 description = "Terminal session recorder"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 files = [
@@ -190,4 +190,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "35627cb7a58eca18f8bc9ba1ee8ebe7dc48e2e5b62a692ee7537c4603bf1bb98"
+content-hash = "0ff286d404ba78f334c4edc5fc240fe3e7ace52c4df74a08452227de4306b427"

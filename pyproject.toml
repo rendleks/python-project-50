@@ -10,13 +10,13 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
+asciinema = "^2.2.0"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"
 
 
 [tool.poetry.group.dev.dependencies]
-asciinema = "^2.2.0"
 pytest = "^7.2.1"
 flake8 = "^6.0.0"
 
