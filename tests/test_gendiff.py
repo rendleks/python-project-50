@@ -28,6 +28,8 @@ file2 = {
   "host": "hexlet.io",
 }
 
-simple_data = read(get_fixture_path('simple.txt')).rstrip().split('\n\n\n')
+simple_data = read(get_fixture_path('simple.txt')).rstrip()
 
-print(simple_data)
+
+def test_simple():
+  assert stringify(file1, file2) == simple_data

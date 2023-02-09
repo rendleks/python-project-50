@@ -18,8 +18,10 @@ def key_in_dicts(key, lst1, lst2, replace=' ', spacer_count=2):
 
 
 def stringify(file1, file2, format="json"):
-    lst1 = json.load(open(file1))
-    lst2 = json.load(open(file2))
+    # lst1 = json.load(open(file1))
+    # lst2 = json.load(open(file2))
+    lst1 = file1
+    lst2 = file2
     uniq_keys = sorted(lst1.keys() | lst2.keys())
     lines = []
     for key in uniq_keys:
