@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import itertools
-import json
 
 
 def key_in_dicts(key, lst1, lst2, replace=' ', spacer_count=2):
