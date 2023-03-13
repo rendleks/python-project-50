@@ -16,3 +16,8 @@ $ make package-install
 ```bash
 $ gendiff filepath1 filepath2
 ```
+
+
+### Demonstration how to work gendiff and package install
+
+[![asciicast](https://asciinema.org/a/J4Rd61ZFpl8cd5RG6XxI0sC97.svg)](https://asciinema.org/a/J4Rd61ZFpl8cd5RG6XxI0sC97)
